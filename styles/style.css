@@ -1,0 +1,126 @@
+/*---------------------
+ fonts styles
+---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/*--------------------
+ headers styles
+--------------------- */
+header h1{
+    width:485px;
+    font-size: 64px;
+    padding-top:100px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+a{
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500px;
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding:5px 20px;
+    margin-left: 50px;
+
+}
+header{
+   
+    height: 600px;
+     background-color: rgb(51, 103, 214);
+}
+header img{
+    width:556px;
+    height:438px;
+
+}
+.top-banner img{
+  margin-top: 80px;
+}
+/* -------------------
+common styles
+---------------------- */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    background-color: #F3F1FF;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 28px;
+}
+p{
+     color:#6C6C6C;
+     font-size:16px; 
+}
+/* -----------------------
+players styles
+------------------------- */
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top:30px;
+    padding:30px;
+}
+.player{
+    background-color: #FFFFFF;
+    width:330px;
+    height:474px;
+    padding:15px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.player img{
+    width:300px;
+    height:256px;
+    padding: 15px;
+}
+.player-details{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+/* -------------------
+watch styles
+-------------------- */
+.half-width{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    grid-row-gap:10px;
+}
+ .down-left-half-width{ 
+     width:469px;
+    height:350px; 
+    padding:15px;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.down-right-half-width img{
+    width:567px;
+    height:427px ;
+}
+footer img{
+    width:480px;
+}
+footer{
+    text-align: center;
+    margin:100px;
+} 
+
+/*----------------------------
+         Media Queries
+----------------------------- */
+@media only screen and (max-width:688px) {
+    .container{
+        width:100%;
+    }
+    .player {
+        grid-template-columns:repeat(1, 1fr);
+    }
+    .player-img{
+        grid-area: column;
+    }
+}
