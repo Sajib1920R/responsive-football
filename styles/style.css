@@ -28,10 +28,13 @@ header{
     height: 600px;
      background-color: rgb(51, 103, 214);
 }
+header:hover {
+    color:white;
+    background-image: linear-gradient(DarkSlateBlue, purple);
+}
 header img{
     width:556px;
     height:438px;
-
 }
 .top-banner img{
   margin-top: 80px;
@@ -61,24 +64,24 @@ players styles
 .container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin-top:30px;
     padding:30px;
+    margin-bottom: 150px;
 }
 .player{
     background-color: #FFFFFF;
     width:330px;
     height:474px;
-    padding:15px;
+    padding: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: 24px;
 }
+
 .player img{
     width:300px;
     height:256px;
     padding: 15px;
 }
-.player-details{
+.player-details{ 
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 15px;
@@ -88,7 +91,7 @@ watch styles
 -------------------- */
 .half-width{
     display:grid;
-    grid-template-columns:repeat(2, 1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-row-gap:10px;
 }
  .down-left-half-width{ 
@@ -102,25 +105,58 @@ watch styles
     width:567px;
     height:427px ;
 }
-footer img{
+ /*-------------------------
+         extra parts styles
+ ---------------------------- */
+.finals{
+    margin-left: 200px;
+    margin-top:150px;
+}
+
+.final-1 img{
+    width:800px;
+    height:300px;
+}
+.winner p{
+    width:500px; 
+}
+ /* --------------------------
+        footers styles--
+ ----------------------------
+ */
+
+ footer img{
     width:480px;
 }
 footer{
     text-align: center;
     margin:100px;
-} 
-
+}
 /*----------------------------
          Media Queries
 ----------------------------- */
+
+
+/* -----------------------
+    mobile  devices
+------------------------- */
 @media only screen and (max-width:688px) {
-    .container{
-        width:100%;
-    }
-    .player {
-        grid-template-columns:repeat(1, 1fr);
-    }
-    .player-img{
-        grid-area: column;
-    }
+   
+   .half-width{
+       width:100%;
+       height: 100%;
+       /* grid-template-columns: repeat(1,1fr); */
+   }
+   .container{
+       width:100%;
+       grid-template-columns: repeat(1,1fr); 
+       justify-content: center;
+       align-items: center;
+       padding: 0px;
+
+   }
+  footer{
+    text-align: center;
+}
+
 }
